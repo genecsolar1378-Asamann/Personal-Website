@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    color: #183b56;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #caf0f8;
+}
+
+/* Main Page */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #caf0f8, #90e0ef);
+}
+
+.hero h1 {
+    color: #023e8a;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Main Page Picture */
+.profile-picture {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 8px 25px rgba(0, 70, 120, 0.3);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #023e8a;
+}
+
+/* Other Pages */
+.page {
+    min-height: 85vh;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.page > h1 {
+    color: #023e8a;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 70, 120, 0.15);
+    max-width: 750px;
+    margin: auto;
+}
+
+.card h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+    margin: 10px;
+}
+
+/* Favorite Cards */
+.favorites {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.favorites .card {
+    width: 220px;
+    min-height: 220px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.favorites .card:hover {
+    transform: translateY(-10px);
+}
+
+.emoji {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .profile-picture {
+        width: 170px;
+        height: 170px;
+    }
+}
